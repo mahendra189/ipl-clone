@@ -1,10 +1,10 @@
-# IPL 2024 Website Clone
+# La Liga 2023-24 Website Clone
 
-A modern, responsive website showcasing the Indian Premier League (IPL) 2024 season. This project is created for educational purposes and demonstrates the use of HTML5, CSS3, and JavaScript to build an interactive sports website.
+A modern, responsive website showcasing the Spanish La Liga 2023-24 season. This project is created for educational purposes and demonstrates the use of HTML5, CSS3, and JavaScript to build an interactive sports website.
 
 ## Features
 
-- 🏏 Responsive design that works on all devices
+- ⚽ Responsive design that works on all devices
 - 🏆 Team showcase with logos and achievements
 - 📅 Upcoming matches section
 - 👥 Player profiles with statistics
@@ -23,9 +23,9 @@ A modern, responsive website showcasing the Indian Premier League (IPL) 2024 sea
 ## Project Structure
 
 ```
-iplwebsite/
+laligawebsite/
 ├── images/
-│   ├── ipl-logo.png
+│   ├── laliga-logo.png
 │   ├── team-logos/
 │   └── player-images/
 ├── index.html
@@ -38,12 +38,12 @@ iplwebsite/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mahendra189/ipl-clone.git
+   git clone https://github.com/mahendra189/laliga-clone.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd ipl-clone
+   cd laliga-clone
    ```
 
 3. Open `index.html` in your web browser to view the website.
@@ -51,19 +51,19 @@ iplwebsite/
 ## Features in Detail
 
 ### Home Section
-- Hero section with IPL 2024 welcome message
+- Hero section with La Liga 2023-24 welcome message
 - Key statistics about the tournament
 - Animated elements for better user engagement
 
 ### Teams Section
-- Grid layout of IPL teams
+- Grid layout of La Liga teams
 - Team logos and achievements
 - Hover effects for interactive experience
 
 ### Matches Section
 - Upcoming match schedule
 - Team vs Team display
-- Venue information
+- Stadium information
 - Match type indicators
 
 ### Players Section
@@ -85,7 +85,7 @@ This project is created for educational purposes. Feel free to fork and modify t
 
 ## License
 
-This project is created for educational purposes only. All IPL-related content and images are property of their respective owners.
+This project is created for educational purposes only. All La Liga-related content and images are property of their respective owners.
 
 ## Contact
 
