@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - ICC Cricket</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cricket"></i> ICC Cricket
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rankings.html">Rankings</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Header -->
+    <div class="news-header py-4">
+        <div class="container">
+            <h1 class="text-center mb-4">Latest Cricket News</h1>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="news-filters">
+                        <div class="btn-group w-100" role="group">
+                            <button type="button" class="btn btn-primary active">All News</button>
+                            <button type="button" class="btn btn-outline-primary">Match Reports</button>
+                            <button type="button" class="btn btn-outline-primary">Team News</button>
+                            <button type="button" class="btn btn-outline-primary">Player News</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured News -->
+    <section class="featured-news py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="featured-article">
+                        <div class="placeholder-image">
+                            <i class="fas fa-cricket fa-5x"></i>
+                        </div>
+                        <h2 class="mt-3">India Clinches Series Victory Against Australia</h2>
+                        <p class="text-muted">March 10, 2024</p>
+                        <p class="lead">India secured a thrilling victory in the final Test match against Australia, winning the series 2-1.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="latest-news">
+                        <h3>Latest Updates</h3>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">England Announces Squad for T20 World Cup</h5>
+                                    <small>3 hours ago</small>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">New Zealand's Kane Williamson Reaches 8000 Test Runs</h5>
+                                    <small>5 hours ago</small>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">South Africa's Kagiso Rabada Takes 250 Test Wickets</h5>
+                                    <small>8 hours ago</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-grid py-4 bg-light">
+        <div class="container">
+            <div class="row" id="news-container">
+                <!-- News articles will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest cricket news and updates delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html> 

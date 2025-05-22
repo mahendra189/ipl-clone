@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches - ICC Cricket</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="placeholder-image">
+                    <i class="fas fa-cricket fa-5x"></i>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="matches.html">Matches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rankings.html">Rankings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Matches Header -->
+    <div class="matches-header py-4">
+        <div class="container">
+            <h1 class="text-center mb-4">Cricket Matches</h1>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="match-filters">
+                        <div class="btn-group w-100" role="group">
+                            <button type="button" class="btn btn-primary active">All Matches</button>
+                            <button type="button" class="btn btn-outline-primary">Live</button>
+                            <button type="button" class="btn btn-outline-primary">Upcoming</button>
+                            <button type="button" class="btn btn-outline-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Matches Section -->
+    <section class="live-matches py-4">
+        <div class="container">
+            <h2 class="section-title">Live Matches</h2>
+            <div class="row" id="live-matches-container">
+                <!-- Live matches will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Matches Section -->
+    <section class="upcoming-matches py-4 bg-light">
+        <div class="container">
+            <h2 class="section-title">Upcoming Matches</h2>
+            <div class="row" id="upcoming-matches-container">
+                <!-- Upcoming matches will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Match Calendar -->
+    <section class="match-calendar py-4">
+        <div class="container">
+            <h2 class="section-title">Match Calendar</h2>
+            <div class="calendar-container">
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/matches.js"></script>
+</body>
+</html> 

@@ -1,92 +1,124 @@
-# La Liga 2023-24 Website Clone
+# ICC Cricket Website Clone
 
-A modern, responsive website showcasing the Spanish La Liga 2023-24 season. This project is created for educational purposes and demonstrates the use of HTML5, CSS3, and JavaScript to build an interactive sports website.
-
-## Features
-
-- ⚽ Responsive design that works on all devices
-- 🏆 Team showcase with logos and achievements
-- 📅 Upcoming matches section
-- 👥 Player profiles with statistics
-- 🎨 Modern UI with smooth animations
-- 📱 Mobile-friendly navigation
-- 🔍 SEO-friendly structure
-
-## Technologies Used
-
-- HTML5
-- CSS3 (with CSS Variables and Flexbox/Grid)
-- JavaScript
-- Font Awesome Icons
-- Google Fonts
+A modern clone of the ICC Cricket website built with HTML, CSS, JavaScript, jQuery, and Bootstrap.
 
 ## Project Structure
 
 ```
-laligawebsite/
-├── images/
-│   ├── laliga-logo.png
-│   ├── team-logos/
-│   └── player-images/
-├── index.html
-├── styles.css
-├── script.js
-└── README.md
+├── index.html          # Main HTML file
+├── css/
+│   └── style.css      # Custom styles
+├── js/
+│   └── main.js        # Main JavaScript file
+├── images/            # Image assets
+│   ├── teams/         # Team logos
+│   └── hero-bg.jpg    # Hero section background
+└── README.md          # Project documentation
 ```
 
-## Setup Instructions
+## Team Tasks Breakdown
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mahendra189/laliga-clone.git
-   ```
+### 1. Frontend Developer 1 (UI/UX Lead)
+- **Task**: Homepage and Navigation
+- **Responsibilities**:
+  - Implement responsive navigation bar
+  - Design and implement hero section
+  - Create featured matches section
+  - Ensure responsive design across all devices
+  - Implement Bootstrap grid system
+  - Create reusable UI components
 
-2. Navigate to the project directory:
-   ```bash
-   cd laliga-clone
-   ```
+### 2. Frontend Developer 2 (Component Specialist)
+- **Task**: Match Details and Rankings
+- **Responsibilities**:
+  - Design and implement match cards
+  - Create rankings tables
+  - Implement live scores component
+  - Design statistics display
+  - Add jQuery animations for match updates
+  - Create match detail pages
 
-3. Open `index.html` in your web browser to view the website.
+### 3. Frontend Developer 3 (Authentication & User Interface)
+- **Task**: Authentication System
+- **Responsibilities**:
+  - Design and implement login/register pages
+  - Create user profile interface
+  - Implement form validations
+  - Add session management
+  - Create password recovery system
+  - Implement user preferences
 
-## Features in Detail
+### 4. Frontend Developer 4 (News & Media)
+- **Task**: News Section and Media Gallery
+- **Responsibilities**:
+  - Design news article layout
+  - Implement image gallery
+  - Add video player integration
+  - Create social media sharing
+  - Implement content filtering
+  - Design media player controls
 
-### Home Section
-- Hero section with La Liga 2023-24 welcome message
-- Key statistics about the tournament
-- Animated elements for better user engagement
+### 5. Frontend Developer 5 (Interactive Features)
+- **Task**: Interactive Features and Animations
+- **Responsibilities**:
+  - Implement live match updates
+  - Create score animations
+  - Design interactive statistics
+  - Add match predictions
+  - Implement real-time notifications
+  - Create interactive charts
 
-### Teams Section
-- Grid layout of La Liga teams
-- Team logos and achievements
-- Hover effects for interactive experience
+### 6. Frontend Developer 6 (Responsive & Performance)
+- **Task**: Responsive Design and Performance
+- **Responsibilities**:
+  - Ensure mobile responsiveness
+  - Optimize performance
+  - Implement cross-browser compatibility
+  - Add loading animations
+  - Implement error handling
+  - Optimize image loading
 
-### Matches Section
-- Upcoming match schedule
-- Team vs Team display
-- Stadium information
-- Match type indicators
+## Getting Started
 
-### Players Section
-- Player cards with images
-- Player statistics
-- Team affiliations
-- Responsive grid layout
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Start working on your assigned task
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Bootstrap 5
+- Font Awesome
+
+## Development Guidelines
+
+1. Follow the existing code style
+2. Use Bootstrap classes for layout
+3. Implement responsive design
+4. Add comments to your code
+5. Test across different browsers
+6. Optimize for performance
 
 ## Contributing
 
-This project is created for educational purposes. Feel free to fork and modify the code for learning purposes.
+1. Create a new branch for your task
+2. Make your changes
+3. Test thoroughly
+4. Submit a pull request
 
-## Credits
+## Browser Support
 
-- Created by Group 6 CSAI F
-- Images used are for educational purposes only
-- Font Awesome for icons
-- Google Fonts for typography
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-## License
+## Performance Goals
 
-This project is created for educational purposes only. All La Liga-related content and images are property of their respective owners.
-
-## Contact
-
-For any queries or suggestions, please open an issue in the repository. 
+- Page load time < 3 seconds
+- First contentful paint < 1.5 seconds
+- Time to interactive < 3.5 seconds
+- Mobile-friendly score > 90 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings - ICC Cricket</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="placeholder-image">
+                    <i class="fas fa-cricket fa-5x"></i>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="rankings.html">Rankings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rankings Header -->
+    <div class="rankings-header py-4">
+        <div class="container">
+            <h1 class="text-center mb-4">ICC Rankings</h1>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="ranking-filters">
+                        <div class="btn-group w-100" role="group">
+                            <button type="button" class="btn btn-primary active">Teams</button>
+                            <button type="button" class="btn btn-outline-primary">Batsmen</button>
+                            <button type="button" class="btn btn-outline-primary">Bowlers</button>
+                            <button type="button" class="btn btn-outline-primary">All-Rounders</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Rankings -->
+    <section class="team-rankings py-4">
+        <div class="container">
+            <h2 class="section-title">Team Rankings</h2>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>Rating</th>
+                            <th>Points</th>
+                            <th>Matches</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team-rankings-container">
+                        <!-- Team rankings will be loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Rankings -->
+    <section class="player-rankings py-4 bg-light">
+        <div class="container">
+            <h2 class="section-title">Player Rankings</h2>
+            <div class="row">
+                <!-- Batsmen Rankings -->
+                <div class="col-md-6">
+                    <h3>Top Batsmen</h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Team</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody id="batsmen-rankings-container">
+                                <!-- Batsmen rankings will be loaded dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Bowlers Rankings -->
+                <div class="col-md-6">
+                    <h3>Top Bowlers</h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Team</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bowlers-rankings-container">
+                                <!-- Bowlers rankings will be loaded dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/rankings.js"></script>
+</body>
+</html> 
